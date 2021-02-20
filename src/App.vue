@@ -1,27 +1,24 @@
 <template>
-  <div id="app">
-    <Navbar/>
-    <Sidebar/>
-  </div>
+  <v-app style="background: rgba(0,0,0,0);">
+    <Home/>
+  </v-app>
 </template>
 
 <script>
-import Navbar from "@/components/Navbar.vue";
-import Sidebar from "@/components/Sidebar.vue";
+import Home from "@/components/Home.vue";
 export default {
-  name: 'Home',
+  name: 'App',
   data() {
     return {msg: window.location.pathname}
   },
   components: {
-    Navbar,
-    Sidebar
+    Home
   }
 }
 </script>
 
 <style>
-#app {
+v-app {
   font-family: "Tahoma", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
