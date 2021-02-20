@@ -8,7 +8,6 @@
 <script>
 import Navbar from "@/components/Navbar.vue";
 import Sidebar from "@/components/Sidebar.vue";
-
 export default {
   name: 'Home',
   data() {
@@ -30,9 +29,7 @@ export default {
   color: #2c3e50;
   width: 100%;
 }
-
 * {
   margin: 0;
 }
-
 </style>

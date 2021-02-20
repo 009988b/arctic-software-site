@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import vuetify from './plugins/vuetify';
 Vue.config.productionTip = false
 Vue.prototype.$href = window.location.href
 
@@ -11,6 +12,7 @@ const app = new Vue({
   data: {
     currentRoute: window.location.pathname
   },
+
   computed: {
     ViewComponent: {
       get() {
@@ -18,6 +20,8 @@ const app = new Vue({
       }
     }
   },
+
+  vuetify,
   render: h => {return h(app.ViewComponent)}
 })
 
